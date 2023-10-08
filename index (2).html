@@ -1,0 +1,35 @@
+<html>
+    <body>
+        
+    
+
+
+<h1>CONTRIBUTIONS</h1>
+    <form action="backend.php">
+       
+        <label for="name">Name: </label>
+        <input type="text" id="name" required><br><br>
+        <label for="gender">Gender: </label>
+        Male <input type="radio" name="gender" id="gender"> Female  <input type="radio" name="gender"> Other  <input type="radio" name="gender"><br><br>
+        
+        
+        Date-of-Birth: <input type="date" name="dob" id="dob" required><br><br>
+        Roll Number: <input type="number" name="rollno" min="0" id="rollno" required><br><br>
+        <label for="branch">Brach</label>
+        <select name="branch" id="branch">
+            <option value="cs">Computer Science Engineering</option>
+            <option value="ec">Electronics and communication Engineering</option>
+            <option value="ce">Civil Engineering</option>
+            <option value="mt">Metallurgy</option>
+            <option value="ch">Chemical Engineering</option>
+        </select><br><br>
+        Passcode: <input type="text" name="passcode" id="passcode" pattern="[A-Za-z]{6}" title="Enter the 6 digit passcode" required><br><br>
+        E-mail: <input type="email" name="email" id="email" required><br><br>
+        Phone: <input type="number" name="phone" id="phone" placeholder="04822-23456" pattern="[0-9]{5}-[0-9]{5}" required><br><br>
+        Write something about yourself<br><br> <textarea name="myself" id="myself" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" value="Submit"><br><br>
+        <input type="reset" value="Reset now"><br><br>
+    </form>
+    <a href="id,class,CSS.html"><button>Click here for next page</button></a>
+</body>
+</html>
