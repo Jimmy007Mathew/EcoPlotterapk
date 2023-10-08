@@ -1,0 +1,182 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: sans-serif;
+    background-color: #4E8A0B;
+}
+
+header {
+    background-color: #4E8A0B;
+    color: black;
+    padding: 10px ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('img.css/img1.jpg');
+    background-size: cover;
+    color: white;
+    vertical-align: text-top;
+    padding: 500px 0;
+}
+
+
+.hero-content {
+    position: absolute;
+    top: 10%;
+    padding: 50px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    font transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.floating-word {
+    font-size: 18px;
+    color: #F7F7F6;
+    animation: floatWord 3s infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    font-family:  sans-serif;
+    padding: 50px 0;
+}
+
+@keyframes floatWord {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the distance the word floats */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00a4e4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.features {
+    background-color:whitesmoke;
+    font-family: monospace;
+    padding-top: 120px;
+    padding-bottom: 700px;
+    padding-left:60px;
+    padding-right: px;
+    text-align: center;
+    font-weight: bolder;
+}
+.open-button {
+    background-image: url('img.css/img2.jpg'); /* Replace with your image path */
+    background-size: 50px 50px; /* Adjust the size as needed */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center left; /* Center the image horizontally and align it to the left */
+    
+    /* Define the button's dimensions, padding, and other styles */
+    width: 150px;
+    height: 50px;
+    padding-left: 40px; /* Add some left padding to create space for the icon */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.external-link-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.external-link-button:hover {
+    background-color: #0056b3;
+}
+
+.mid-button {
+    background-image: url('img.css/img4.jpg'); /* Replace with your image path */
+    background-size: 30px 30px; /* Adjust the size as needed */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-position: center left; /* Center the image horizontally and align it to the left */
+    
+
+    width: 150px;
+    height: 50px;
+    padding-left: 40px; /* Add some left padding to create space for the icon */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;}
+
+
+.features h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #041b2c;
+    padding-right: 100px;
+}
+
+.feature {
+    margin: 20px;
+    display: inline-block;
+    max-width: 300px;
+    text-align: left;
+}
+
+.feature img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+.feature img {
+    max-width: 50px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right;
+}
+
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
